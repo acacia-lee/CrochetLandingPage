@@ -1,0 +1,175 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Case Crochets </title>
+    <style>
+        /* margins/paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* fonts/colors */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333
+            background-color: #f9f5f2;
+            line-height: 1.6;
+        }
+        /* container styling */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        /* header styling */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-family: "Gerogia", serif;
+            color: #725a46;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #a69787;
+        }
+        /* button styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #fff;
+            background-color: #725a46;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #564537;
+        }
+        /* "about" section */
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .about img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .about h2 {
+            font-size: 2rem;
+            color: #725a46;
+            margin-bottom: 10px;
+        }
+        /* "products" section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px 0;
+        }
+        .product {
+            width: 100%;
+            max-width: 280px;
+            border: 1px solid #e4ded8;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.10);
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 1.4rem;
+            color: #725a46;
+            margin: 15px 0;
+        }
+        .product p {
+            color: #a69787;
+            padding: 0 15px 15px;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        /* footer styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #a69787;
+        }
+        footer a {
+            color: #725a46;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Case Crochets </h1>
+        <p> Handmade Crochet Works - Scarves, Hats, Blankets, and More </p>
+        <a href="#products" class="button"> Shop Collection </a>
+    </header>
+
+    <!-- "about" section -->
+    <section class="about container">
+        <img src="https://images.pexels.com/photos/985341/pexels-photo-985341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h2> About Us </h2>
+        <p> At Case Crochets, every piece is lovingly handcrafted to bring warmth, texture, and timeless style into your life. Explore our unique collection of accessories, blankets, and more, made to order with the finest material and attention to detail. </p>
+    </section>
+
+    <!-- "products" section -->
+    <section id="products" class="products container">
+        <div class="product">
+            <img src="https://images.pexels.com/photos/28949622/pexels-photo-28949622/free-photo-of-portrait-in-fall-with-multicolored-scarf.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Colorful hand-crocheted scarf">
+            <h3> Cozy Scarves </h3>
+            <p> Wrap yourself in warmth with our unique, handcrafted scarves. </p>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/14504995/pexels-photo-14504995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hand-crocheted tan hat with brown pom-pom">
+            <h3> Stylish Hats </h3>
+            <p> Stay cozy and stylish with our collection of crocheted hats. </p>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/5806980/pexels-photo-5806980.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Colorful hand-crocheted blanket">
+            <h3> Soft Blankets </h3>
+            <p> Add a touch of comfort to your home with our soft, beautifully made blankets. </p>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/5237846/pexels-photo-5237846.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tan, round crocheted dish scrubber">
+            <h3> Dish Scrubbers </h3>
+            <p> Eco-friendly, durable, and perfect for your kitchen. </p>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/20674188/pexels-photo-20674188/free-photo-of-woman-in-a-red-sweating-staring.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Woman in red hand-crocheted cardigan">
+            <h3> Crocheted Clothing </h3>
+            <p> Wearable art made just for you - find your favorite piece today. </p>
+        </div>
+    </section>
+
+    <!-- footer -->
+     <footer>
+        <p>&copy; 2024 Case Crochets | <a href="mailto:contact@casecrochets.com"> Contact Us</a></p>
+     </footer>
+
+    </body>
+    </html>
